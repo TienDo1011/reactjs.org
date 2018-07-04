@@ -265,6 +265,7 @@ It will use `this.setState()` to schedule updates to the component local state:
 class Clock extends React.Component {
   constructor(props) {
     super(props);
+    this.tick = this.tick.bind(this);
     this.state = {date: new Date()};
   }
 
